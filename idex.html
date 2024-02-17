@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8dc9445197df6181b03b252f2b6667c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8dc9445197df6181b03b252f2b6667c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8dc9445197df6181b03b252f2b6667c = L.map(
+                "map_a8dc9445197df6181b03b252f2b6667c",
+                {
+                    center: [41.399076582716276, 2.198679827227125],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d7018b85f23bd3af13bb8841be0262b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8d7018b85f23bd3af13bb8841be0262b.addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+            var circle_0b5abc9297e854f0051d1a1b43da11fb = L.circle(
+                [41.3984358, 2.1966413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 215, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_3a7f87882673d25be9e22ec9af5942d1 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_81eabe5b2e12e525b58d2048bfdf0d88 = $(`<div id="html_81eabe5b2e12e525b58d2048bfdf0d88" style="width: 100.0%; height: 100.0%;"><h1>Valkiria Hub Space</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipMpTwW2kQ4KaD8VgPTLXG1Xxx_J3zzA71C3JQfK=w408-h544-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV86CxPUX5jIz4Yij83W3zhgvM_Ls-P0eYHnAngvatOAV9Sxqe8pmLZYQBnXI528qfn6p92iyjJCNnyV-TxzsPdl0rz4AipwCki7otFvrx1J7eNqN6ho7l1c1btM6eZ7Dop-b3lhDwjHqSod7BA_FUoqy=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 43 Opened ones 0. You can visit the site <a href='https://www.google.com/maps/place/Valkiria+Hub+Space/@41.4020517,2.1948465,19z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a317ad56bf65:0x60e0b5fdcde837a4!8m2!3d41.3984358!4d2.1966413!15sCgEqWgMiASqSAQ9jb3dvcmtpbmdfc3BhY2XgAQA!16s%2Fg%2F1pp2xb9tn?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_3a7f87882673d25be9e22ec9af5942d1.setContent(html_81eabe5b2e12e525b58d2048bfdf0d88);
+            
+        
+
+        circle_0b5abc9297e854f0051d1a1b43da11fb.bindPopup(popup_3a7f87882673d25be9e22ec9af5942d1)
+        ;
+
+        
+    
+    
+            var circle_a3df73a935f542e4049bdd6f87251314 = L.circle(
+                [41.4004298, 2.1987498],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 270, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_a4a1ddc317d258edcd0ecb1e088b442c = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_a113d7ddf759c9fe9630ded5b1ffdb37 = $(`<div id="html_a113d7ddf759c9fe9630ded5b1ffdb37" style="width: 100.0%; height: 100.0%;"><h1>The High Class Weed Club</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipND_PVMhFsBQO_hvK122pY_9RnauQdABBiDqggS=w408-h611-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV85Xl8jbmfSGaHfZWgMYwcQrqwiiCm2RmUYcopvwzDGj1B-VFC0CLaCyzGzm5vbhhl8IbWJQ56kOSHQfDMLMWZYyUIxyXYtBEkZy1jZmT5dwNJk-mtiscgmYcWmotVSte58LOb-AqmxDA9jeTOBb9lvQ=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 54 Opened ones 4. You can visit the site <a href='https://www.google.com/maps/place/The+High+Class+Weed+Club/@41.3964526,2.1930222,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3c76a1da56d:0x4c450c8a65486b33!8m2!3d41.4004298!4d2.1987498!15sCgEqkgENY2FubmFiaXNfY2x1YuABAA!16s%2Fg%2F11stszx_zm?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_a4a1ddc317d258edcd0ecb1e088b442c.setContent(html_a113d7ddf759c9fe9630ded5b1ffdb37);
+            
+        
+
+        circle_a3df73a935f542e4049bdd6f87251314.bindPopup(popup_a4a1ddc317d258edcd0ecb1e088b442c)
+        ;
+
+        
+    
+    
+            var circle_3b5e11e3583ddb53b935238c011e4f9c = L.circle(
+                [41.4028922, 2.1949848],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_f8e872f364be10b1a19a083b6db2d532 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_6b558598c21a0240ec874ea26b598cf9 = $(`<div id="html_6b558598c21a0240ec874ea26b598cf9" style="width: 100.0%; height: 100.0%;"><h1>Can Framis Museum</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipOmaalO4IXe8OHWF_sDiwQ-3xAf3FTrbH4nAdQm=w426-h240-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV84UMuDOMWH1GLbBEUPT396gk52U_rqsR7ppV_jA9H16KPcQIlju5sMxC4EFeMX2gSzScIxUKu__XNZIfkyHSmHm_FLUl_RLC2FMUFVV9BYG7o6ZoGKvNWG6EKSgMsRLc0dxE2jz2L5TsDe_YDdENane=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 13 Opened ones 2. You can visit the site <a href='https://www.google.com/maps/place/Museu+Can+Framis/@41.3964517,2.1929792,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12ba54637b105e0f:0xdff4d9dfe310fbeb!8m2!3d41.4028922!4d2.1949848!15sCgEqWgMiASqSARFtb2Rlcm5fYXJ0X211c2V1beABAA!16s%2Fm%2F0_82y64?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_f8e872f364be10b1a19a083b6db2d532.setContent(html_6b558598c21a0240ec874ea26b598cf9);
+            
+        
+
+        circle_3b5e11e3583ddb53b935238c011e4f9c.bindPopup(popup_f8e872f364be10b1a19a083b6db2d532)
+        ;
+
+        
+    
+    
+            var circle_b7a742106b42d2673263d2df65725301 = L.circle(
+                [41.3997581, 2.1934906],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 185, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_2439f753d248fcde1602046d013f8a05 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_86e10ef63fc0055114c4576c98aebcc9 = $(`<div id="html_86e10ef63fc0055114c4576c98aebcc9" style="width: 100.0%; height: 100.0%;"><h1>Padel 7 Glòries</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipMvw7ryz0o3EdlMfM5V8CZfMrdEaWzyDNvjcj7p=w408-h306-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV87aIqPMVPs563CihRzsTyzlhWaYW8kOZmDYyrzkBfxamNN-_Ll3kHeMZgQNnlgJKTuc-XxL5nOaPephPRi_zXRM1nnOjOSqvgKKB_86vh65xAmsoKswgvXwc0eNNozWK5qseC7WGpDVKSTa_9CgXKO1=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 37 Opened ones 1. You can visit the site <a href='https://www.google.com/maps/place/Padel+7+Glories/@41.3964507,2.1929363,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3878c9125c9:0x2b28bbfd1aa1e4e8!8m2!3d41.3997581!4d2.1934906!15sCgEqkgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11rhqmpgxg?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_2439f753d248fcde1602046d013f8a05.setContent(html_86e10ef63fc0055114c4576c98aebcc9);
+            
+        
+
+        circle_b7a742106b42d2673263d2df65725301.bindPopup(popup_2439f753d248fcde1602046d013f8a05)
+        ;
+
+        
+    
+    
+            var circle_d9882ab2c83a21b53de39b8ef4cd5864 = L.circle(
+                [41.3977323, 2.1911108],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 145, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_f2cd9620b39fdef8e41e2c3254b86b6f = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_cf787bd6147b0342b69c559f68378577 = $(`<div id="html_cf787bd6147b0342b69c559f68378577" style="width: 100.0%; height: 100.0%;"><h1>Razzmatazz</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipNL0PH2NXDlGZr92XzGgSSCXuzZCD-r01doPkSt=w408-h544-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV854kDo4qqgcTFGCYTkc9-clIP1mWklzpncQ348yZoD6_QAVefFbrZz_G8b0jE8F7RGuA1juJLGtg5hZvRNsH3k-52XHfghhC2sQVbtgcmVhz008WN5TYRtos62m-lv1QjQ7RsP4xw0igG5P89JBimTA=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 29 Opened ones 0. You can visit the site <a href='https://www.google.com/maps/place/Sala+Razzmatazz/@41.3964507,2.1929363,15z/data=!3m1!5s0x12a4a319059f6311:0x5b2405114fe539dc!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3190e0640b5:0x40f9d8fe93a98ca!8m2!3d41.3977323!4d2.1911108!15sCgEqWgMiASqSAQVkaXNjb-ABAA!16s%2Fg%2F1211jj9f?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_f2cd9620b39fdef8e41e2c3254b86b6f.setContent(html_cf787bd6147b0342b69c559f68378577);
+            
+        
+
+        circle_d9882ab2c83a21b53de39b8ef4cd5864.bindPopup(popup_f2cd9620b39fdef8e41e2c3254b86b6f)
+        ;
+
+        
+    
+    
+            var circle_41087c496d142851f9aae4e7a09591aa = L.circle(
+                [41.3951733, 2.1885328],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 255, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_41ab3d679ee613c6d46979d3124d64fb = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_42ca81b555f17f12d42945593ad5c81c = $(`<div id="html_42ca81b555f17f12d42945593ad5c81c" style="width: 100.0%; height: 100.0%;"><h1>CrossFit PobleNou</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipMKfQUeuhJNIe5eVIyRARGnVu-Sv6cGm1JeBPnO=w416-h240-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV86yJel7V5Rjuv5y9gClfskAmNCRo-0KaAljU8n5vS3EzohcOVKM71J20I4xbKjJRkMVTdcBEC0VtQCNtD8LKFRVyaaaOylnvHUKJcr72RFjEC6AtMOegyDvtx7_WeaPbMFpahbFAJQMM9I_pjuHuXUJ=w1880-h1410-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 51 Opened ones 3. You can visit the site <a href='https://www.google.com/maps/place/CrossFit/@41.3964507,2.1929363,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a31c1c8c5d69:0x6a02904adaa40213!8m2!3d41.3951733!4d2.1885328!15sCgEqkgEOZml0bmVzc19jZW50ZXLgAQA!16s%2Fg%2F11b7gdl31_?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_41ab3d679ee613c6d46979d3124d64fb.setContent(html_42ca81b555f17f12d42945593ad5c81c);
+            
+        
+
+        circle_41087c496d142851f9aae4e7a09591aa.bindPopup(popup_41ab3d679ee613c6d46979d3124d64fb)
+        ;
+
+        
+    
+    
+            var circle_7ff8da9cc537f71893472a2d293939b6 = L.circle(
+                [41.3938117, 2.1940245],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_0c8953df9f1bdd749b5d58e155aea95d = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_2ceeee42396be6539ecde2b559d2648c = $(`<div id="html_2ceeee42396be6539ecde2b559d2648c" style="width: 100.0%; height: 100.0%;"><h1>Jardins de Creu Casas</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipPrkOyEzhDm2BbQsIdJV0mVNSwf8cwCE_IWIiKJ=w408-h285-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV87-uSUYcr34VoVEMAYj8eQfuu9MLoO1tBI4LFmyEKHm5J0orrfFalEg8Bt0eKmX6nt2wlnS2aQybC9k5lvxuijBOwSNFDKQfUjDi1wvLfSOSMdXy7FpXZ0XEc0E2gQKU30PRu6z5OfYLVhmYjarwgr0=w1419-h798-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 40 Opened ones 0. You can visit the site <a href='https://www.google.com/maps/place/Jardines+de+Creu+Casas/@41.3964507,2.1929363,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3088a35b065:0xc997c40479c5856a!8m2!3d41.3938117!4d2.1940245!15sCgEqkgEGZ2FyZGVu4AEA!16s%2Fg%2F11hw8n3425?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_0c8953df9f1bdd749b5d58e155aea95d.setContent(html_2ceeee42396be6539ecde2b559d2648c);
+            
+        
+
+        circle_7ff8da9cc537f71893472a2d293939b6.bindPopup(popup_0c8953df9f1bdd749b5d58e155aea95d)
+        ;
+
+        
+    
+    
+            var circle_b3318ac52b4f0df19a416a5302f32c90 = L.circle(
+                [41.39517, 2.196452],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 295, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_581b61d6bb6c23aa7bc1728f04a0e5f9 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_c31b5fd8caeb507e25da166a376b9fa3 = $(`<div id="html_c31b5fd8caeb507e25da166a376b9fa3" style="width: 100.0%; height: 100.0%;"><h1>Gabby's Brunch</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipMOQEX6WnJXBaALqZyXiNo7aZomKJXzqMw_MREP=w408-h544-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV87dxfQUyduLxG6nbi5f23HFVND2ZoHIftYgzoW0wdXbdaX2z4jZen-1JGSpUcd2xAYXP0LODv5gPzXPKMgDZcb2Cehb_YCHQGc-73cTbXLVYc5Ev6nmlzDxBF1Rop_WudNnJo8ModR5YbCqEyeT7-0X=w1279-h959-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 59 Opened ones 4. You can visit the site <a href='https://www.google.com/maps/place/Gabby's+Brunch/@41.3964507,2.1929363,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3ab39a36091:0x7ae4a7c6c2076807!8m2!3d41.39517!4d2.196452!15sCgEqWgMiA'>here👈</a></h3></div>`)[0];
+                popup_581b61d6bb6c23aa7bc1728f04a0e5f9.setContent(html_c31b5fd8caeb507e25da166a376b9fa3);
+            
+        
+
+        circle_b3318ac52b4f0df19a416a5302f32c90.bindPopup(popup_581b61d6bb6c23aa7bc1728f04a0e5f9)
+        ;
+
+        
+    
+    
+            var circle_75b016ec527dcad73dcf2d6dfae319f8 = L.circle(
+                [41.3952484, 2.2007677],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 185, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_6794125eb816cf44e9ba954d33c9a1cb = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_de80da030bd5410e4bee280bcc218c8b = $(`<div id="html_de80da030bd5410e4bee280bcc218c8b" style="width: 100.0%; height: 100.0%;"><h1>CASAL DE BARRI DE LA VILA OLÍMPICA - CAN GILI NOU</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipOOQYcK2L7Bq4h59BmUKNH2bNO45mCo1ycBT17L=w408-h332-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV84M663h2Wkz0SAEArLnz2_ZslkoJVd3_C23wRo_iH5NISPmnjUxF06PkGn_Cxm9L8zAJF6ZSEE8jAlzwV48tlGWfozuC9pgwUUMX5YMqcG4hDslBkarphYrVxzM9Gbg1MfT9_yqq_kn4ujk0lH3894x=w1279-h959-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 37 Opened ones 3. You can visit the site <a href='https://www.google.com/maps/place/CASAL+DE+BARRIO+DE+LA+VILLA+OL%C3%8DMPICA/@41.3964507,2.1929363,15z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a313891644db:0x7e712a72a83f7f9!8m2!3d41.3952484!4d2.2007677!15sCgEqkgEPY3VsdHVyYWxfY2VudGVy4AEA!16s%2Fg%2F11c5rpxcrn?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_6794125eb816cf44e9ba954d33c9a1cb.setContent(html_de80da030bd5410e4bee280bcc218c8b);
+            
+        
+
+        circle_75b016ec527dcad73dcf2d6dfae319f8.bindPopup(popup_6794125eb816cf44e9ba954d33c9a1cb)
+        ;
+
+        
+    
+    
+            var circle_241463b6fadfbc862508d14c1f6d5e19 = L.circle(
+                [41.39669079999999, 2.1943796],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 155, "stroke": true, "weight": 3}
+            ).addTo(map_a8dc9445197df6181b03b252f2b6667c);
+        
+    
+        var popup_f0191e44f33405cb28ce383abb873267 = L.popup({"maxWidth": 800});
+
+        
+            
+                var html_ce441bc1d4d6ec5e3f1a04044a8b03da = $(`<div id="html_ce441bc1d4d6ec5e3f1a04044a8b03da" style="width: 100.0%; height: 100.0%;"><h1>Institute for Advanced Architecture of Catalonia</h1><div id='slideshow'><img src='https://lh5.googleusercontent.com/p/AF1QipPf7CFXKuglUaXevq_tTqmmJEf6e74H0PvH7YM1=w408-h404-k-no' height='200px'><img src='https://lh3.googleusercontent.com/pw/ABLVV87t_kCwzGkDlgHZKaiQHFtLM2oyKr5NcrFxDNuvHjO1CgtOMCgLxpJgMKoFycJnL8TxjFfT8y0d8-JTleVVEuG_W6Ic-QufZBTroMedib03xftLJ_c8kqKzOYEHO4vmYpqsFWrcfTE2fV5PJZCr6fxx=w1279-h959-s-no-gm?authuser=0' height='200px'></div><h3>  Wifi around the area 31 Opened ones 3. You can visit the site <a href='https://www.google.com/maps/place/Instituto+de+Arquitectura+Avanzada+de+Catalu%C3%B1a/@41.3995993,2.188879,15.25z/data=!4m11!1m3!11m2!2sBBqUhq-jTjatJLi8DfQ_9A!3e3!3m6!1s0x12a4a3176486d56b:0x43da322368b6ed68!8m2!3d41.3966908!4d2.1943796!15sCgEqkgETYXJjaGl0ZWN0dXJlX3NjaG9vbOABAA!16s%2Fm%2F02q7y2c?entry=ttu'>here👈</a></h3></div>`)[0];
+                popup_f0191e44f33405cb28ce383abb873267.setContent(html_ce441bc1d4d6ec5e3f1a04044a8b03da);
+            
+        
+
+        circle_241463b6fadfbc862508d14c1f6d5e19.bindPopup(popup_f0191e44f33405cb28ce383abb873267)
+        ;
+
+        
+    
+</script>
+</html>

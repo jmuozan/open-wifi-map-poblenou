@@ -32,4 +32,4 @@ for index, row in data.iterrows():
     ).add_to(m)
 
 # Output map
-m.save("poblenou.html")
+m.save("idex.html")
